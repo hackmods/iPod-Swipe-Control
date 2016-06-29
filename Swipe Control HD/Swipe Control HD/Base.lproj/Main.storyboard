@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swipe_Control_HD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xl9-6n-c0z">
+                                <rect key="frame" x="558" y="570" width="22" height="22"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MXt-na-Edy">
+                                        <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOx-w5-euc" userLabel="btnHelp">
+                                                <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                                <connections>
+                                                    <action selector="btnHelpIcon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vx6-6q-vX1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="resultString" text="Swipe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKO-IU-OTx">
+                                <rect key="frame" x="113" y="220" width="375" height="159"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="65"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xl9-6n-c0z" secondAttribute="bottom" constant="8" id="Cdm-n1-7TD"/>
+                            <constraint firstItem="Xl9-6n-c0z" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HMo-7A-QQ9"/>
+                            <constraint firstItem="YKO-IU-OTx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RhP-bs-bEm"/>
+                            <constraint firstItem="YKO-IU-OTx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zxk-Ny-TDs"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="SN2-Lp-52A" appends="YES" id="N2W-xw-A7F"/>
+                            <outletCollection property="gestureRecognizers" destination="TCr-vW-2a6" appends="YES" id="8nQ-po-n3l"/>
+                            <outletCollection property="gestureRecognizers" destination="92F-Jy-abc" appends="YES" id="DQr-YF-tRV"/>
+                            <outletCollection property="gestureRecognizers" destination="Shb-4y-jqK" appends="YES" id="PKp-L9-bei"/>
+                            <outletCollection property="gestureRecognizers" destination="2Eu-wf-20N" appends="YES" id="j2f-e4-F6P"/>
+                            <outletCollection property="gestureRecognizers" destination="P8r-0N-cjB" appends="YES" id="0Iw-tg-I4v"/>
+                            <outletCollection property="gestureRecognizers" destination="BFF-c8-MZv" appends="YES" id="CE3-qs-2QA"/>
+                            <outletCollection property="gestureRecognizers" destination="zvh-Vs-iWB" appends="YES" id="VLJ-Y6-40f"/>
+                            <outletCollection property="gestureRecognizers" destination="alX-hP-lk8" appends="YES" id="iOg-GX-3KJ"/>
+                            <outletCollection property="gestureRecognizers" destination="7D6-s8-isP" appends="YES" id="YG2-eE-YdB"/>
+                            <outletCollection property="gestureRecognizers" destination="K2J-ub-sp8" appends="YES" id="Kl4-0Z-Z1R"/>
+                            <outletCollection property="gestureRecognizers" destination="iaA-4X-1WL" appends="YES" id="yhx-Wg-UBi"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="btnHelpIcon" destination="IOx-w5-euc" id="va3-BX-EAK"/>
+                        <outlet property="swipeDown" destination="Shb-4y-jqK" id="hKD-uY-jg7"/>
+                        <outlet property="swipeLabel" destination="YKO-IU-OTx" id="mCv-Pz-MQL"/>
+                        <outlet property="swipeLeft" destination="2Eu-wf-20N" id="FJu-Rh-aHJ"/>
+                        <outlet property="swipeLeft2" destination="BFF-c8-MZv" id="oQM-or-Gz2"/>
+                        <outlet property="swipeRight" destination="P8r-0N-cjB" id="xX4-nI-5vM"/>
+                        <outlet property="swipeRight2" destination="zvh-Vs-iWB" id="Fs0-8J-uNn"/>
+                        <outlet property="swipeUp" destination="TCr-vW-2a6" id="rMS-Nt-7vk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="SN2-Lp-52A">
+                    <connections>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="4N8-6i-Rdo"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="92F-Jy-abc">
+                    <connections>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="zgw-wd-jro"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="TCr-vW-2a6" userLabel="swipeUp">
+                    <connections>
+                        <action selector="upGesture:" destination="BYZ-38-t0r" id="gpE-Rc-jEC"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="Shb-4y-jqK" userLabel="swipeDown">
+                    <connections>
+                        <action selector="downGesture:" destination="BYZ-38-t0r" id="I1F-FW-cLg"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="2Eu-wf-20N" userLabel="swipeLeft">
+                    <connections>
+                        <action selector="leftGesture:" destination="BYZ-38-t0r" id="78D-TQ-ZYg"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="P8r-0N-cjB" userLabel="swipeRight">
+                    <connections>
+                        <action selector="rightGesture:" destination="BYZ-38-t0r" id="Csz-8G-gD1"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" numberOfTouchesRequired="2" id="BFF-c8-MZv" userLabel="swipeLeft2">
+                    <connections>
+                        <action selector="leftGesture2:" destination="BYZ-38-t0r" id="nyK-3O-ZIw"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" numberOfTouchesRequired="2" id="zvh-Vs-iWB" userLabel="swipeRight2">
+                    <connections>
+                        <action selector="rightGesture2:" destination="BYZ-38-t0r" id="jI6-T8-nbb"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" numberOfTouchesRequired="3" id="alX-hP-lk8" userLabel="swipeLeft3">
+                    <connections>
+                        <action selector="leftGesture3:" destination="BYZ-38-t0r" id="Pzq-1l-rPp"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="rnS-tg-QRU"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" numberOfTouchesRequired="3" id="7D6-s8-isP" userLabel="swipeRight3">
+                    <connections>
+                        <action selector="rightGesture3:" destination="BYZ-38-t0r" id="dmA-ri-r83"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" numberOfTouchesRequired="4" id="K2J-ub-sp8" userLabel="swipeLeft4">
+                    <connections>
+                        <action selector="leftGesture4:" destination="BYZ-38-t0r" id="3xH-jo-7cN"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="Jxa-hB-FI3"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" numberOfTouchesRequired="4" id="iaA-4X-1WL" userLabel="swipeRight4">
+                    <connections>
+                        <action selector="rightGesture4:" destination="BYZ-38-t0r" id="0oZ-17-rAb"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="ecn-c4-CjC"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="598" y="418"/>
+        </scene>
+    </scenes>
+</document>
