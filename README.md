@@ -2,9 +2,9 @@
 
 ## Purpose
 
-A swift iOS application that utilizes jestures to control various components of the iOs's Music application.
+A swift iOS application that utilizes gestures to control various components of the iOS's Music application.
 
-![AutoXOA Install Menu](https://raw.githubusercontent.com/hackmods/iPod-Swipe-Control/master/images/iPod-Swipe-Control.png)
+![iPod Swipe Control](https://raw.githubusercontent.com/hackmods/iPod-Swipe-Control/master/images/iPod-Swipe-Control.png)
 ## License
 Copyright [2016] [Ryan Morris and Brad Gillap]
 
