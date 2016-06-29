@@ -6,7 +6,7 @@ A swift iOS application that utilizes gestures to control various components of 
 
 ![iPod Swipe Control](https://raw.githubusercontent.com/hackmods/iPod-Swipe-Control/master/images/iPod-Swipe-Control.png)
 ## License
-Copyright [2016] [Ryan Morris and Brad Gillap]
+Copyright [2016] [Ryan Morris]
 
 Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
