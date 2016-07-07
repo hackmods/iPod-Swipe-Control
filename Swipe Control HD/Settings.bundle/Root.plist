@@ -42,11 +42,15 @@
 				<string>Classic</string>
 			</array>
 			<key>Titles</key>
-			<array/>
+			<array>
+				<string>Bright</string>
+				<string>All</string>
+				<string>Classic</string>
+			</array>
 			<key>Key</key>
 			<string>background_type</string>
 			<key>DefaultValue</key>
-			<string>1</string>
+			<string>Bright</string>
 		</dict>
 		<dict>
 			<key>DefaultValue</key>
@@ -65,6 +69,16 @@
 			<string>Toggle Repeat</string>
 			<key>Key</key>
 			<string>toggle_Repeat</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Toggle Time Skip</string>
+			<key>Key</key>
+			<string>toggle_Skip</string>
 			<key>DefaultValue</key>
 			<true/>
 		</dict>

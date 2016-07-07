@@ -40,7 +40,7 @@
                                     <accessibilityTraits key="traits" none="YES"/>
                                 </accessibility>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="65"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="55"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -66,6 +66,8 @@
                             <outletCollection property="gestureRecognizers" destination="7D6-s8-isP" appends="YES" id="YG2-eE-YdB"/>
                             <outletCollection property="gestureRecognizers" destination="K2J-ub-sp8" appends="YES" id="Kl4-0Z-Z1R"/>
                             <outletCollection property="gestureRecognizers" destination="iaA-4X-1WL" appends="YES" id="yhx-Wg-UBi"/>
+                            <outletCollection property="gestureRecognizers" destination="gKB-go-jYY" appends="YES" id="Cdo-QZ-AAe"/>
+                            <outletCollection property="gestureRecognizers" destination="gKB-go-jYY" appends="YES" id="m04-2O-6ub"/>
                         </connections>
                     </view>
                     <connections>
@@ -87,7 +89,12 @@
                 </tapGestureRecognizer>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="92F-Jy-abc">
                     <connections>
-                        <outlet property="delegate" destination="8bC-Xf-vdC" id="zgw-wd-jro"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="e3v-gY-8dH"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="1" numberOfTouchesRequired="2" id="gKB-go-jYY" userLabel="two fing Long Press Gesture Recognizer">
+                    <connections>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="82K-6H-9Mg"/>
                     </connections>
                 </pongPressGestureRecognizer>
                 <swipeGestureRecognizer direction="up" id="TCr-vW-2a6" userLabel="swipeUp">
