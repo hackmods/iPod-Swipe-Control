@@ -50,11 +50,11 @@ class ViewController: UIViewController {
        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(ViewController.tapDetected(_:)))
        view.addGestureRecognizer(doubleTap)
         
-        let longPressDetected = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.longPressDetected(_:)))
-        view.addGestureRecognizer(longPressDetected)
+        //let longPressDetected = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.longPressDetected(_:)))
+        //view.addGestureRecognizer(longPressDetected)
         //for colour bg change
-        let twolongPressDetected = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.twolongPressDetected(_:)))
-        view.addGestureRecognizer(twolongPressDetected)
+        //let twolongPressDetected = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.twolongPressDetected(_:)))
+        //view.addGestureRecognizer(twolongPressDetected)
         
         let notificationCenter = NSNotificationCenter.defaultCenter()
         notificationCenter.addObserver(self, selector: #selector(ViewController.handlePlayingItemChanged), name: MPMusicPlayerControllerNowPlayingItemDidChangeNotification, object: musicPlayer)
@@ -118,6 +118,12 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    
+    
+    
+    
+    
     
     @IBAction func tapDetected(sender: UITapGestureRecognizer) {
         if (self.isPlay) {
@@ -188,14 +194,14 @@ class ViewController: UIViewController {
         }
         else if(background == "All"){
             tempString = "Cassic"
-            
         }
         else { //if classic
             tempString = "Bright"
         }
         swipeLabel.text = tempString + " Colours"
+        background = tempString
         changeBG()
-       // NSdefaults.setValue(tempString, forKey: "background_type")
+       NSdefaults.setValue(tempString, forKey: "background_type")
     }
     
     func delay(delay:Double, closure:()->()) {

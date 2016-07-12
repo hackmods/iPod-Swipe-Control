@@ -67,7 +67,6 @@
                             <outletCollection property="gestureRecognizers" destination="K2J-ub-sp8" appends="YES" id="Kl4-0Z-Z1R"/>
                             <outletCollection property="gestureRecognizers" destination="iaA-4X-1WL" appends="YES" id="yhx-Wg-UBi"/>
                             <outletCollection property="gestureRecognizers" destination="gKB-go-jYY" appends="YES" id="Cdo-QZ-AAe"/>
-                            <outletCollection property="gestureRecognizers" destination="gKB-go-jYY" appends="YES" id="m04-2O-6ub"/>
                         </connections>
                     </view>
                     <connections>
@@ -84,47 +83,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer numberOfTapsRequired="2" id="SN2-Lp-52A">
                     <connections>
+                        <action selector="tapDetected:" destination="BYZ-38-t0r" id="3yb-zc-jgz"/>
                         <outlet property="delegate" destination="8bC-Xf-vdC" id="4N8-6i-Rdo"/>
                     </connections>
                 </tapGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="92F-Jy-abc">
+                <pongPressGestureRecognizer delaysTouchesEnded="NO" allowableMovement="10" minimumPressDuration="1" id="92F-Jy-abc">
                     <connections>
+                        <action selector="longPressDetected:" destination="BYZ-38-t0r" id="MfF-M5-g49"/>
                         <outlet property="delegate" destination="8bC-Xf-vdC" id="e3v-gY-8dH"/>
                     </connections>
                 </pongPressGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="1" numberOfTouchesRequired="2" id="gKB-go-jYY" userLabel="two fing Long Press Gesture Recognizer">
+                <pongPressGestureRecognizer delaysTouchesEnded="NO" allowableMovement="10" minimumPressDuration="1.5" numberOfTouchesRequired="2" id="gKB-go-jYY" userLabel="two fing Long Press Gesture Recognizer">
                     <connections>
+                        <action selector="twolongPressDetected:" destination="BYZ-38-t0r" id="h3E-3a-A1l"/>
                         <outlet property="delegate" destination="8bC-Xf-vdC" id="82K-6H-9Mg"/>
                     </connections>
                 </pongPressGestureRecognizer>
                 <swipeGestureRecognizer direction="up" id="TCr-vW-2a6" userLabel="swipeUp">
                     <connections>
                         <action selector="upGesture:" destination="BYZ-38-t0r" id="gpE-Rc-jEC"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="19x-xi-IIB"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="down" id="Shb-4y-jqK" userLabel="swipeDown">
                     <connections>
                         <action selector="downGesture:" destination="BYZ-38-t0r" id="I1F-FW-cLg"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="9n5-GE-dZo"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="left" id="2Eu-wf-20N" userLabel="swipeLeft">
                     <connections>
                         <action selector="leftGesture:" destination="BYZ-38-t0r" id="78D-TQ-ZYg"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="QoB-Gb-OFy"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="right" id="P8r-0N-cjB" userLabel="swipeRight">
                     <connections>
                         <action selector="rightGesture:" destination="BYZ-38-t0r" id="Csz-8G-gD1"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="2Sn-wI-kDD"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="left" numberOfTouchesRequired="2" id="BFF-c8-MZv" userLabel="swipeLeft2">
                     <connections>
                         <action selector="leftGesture2:" destination="BYZ-38-t0r" id="nyK-3O-ZIw"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="dGG-p3-YVY"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="right" numberOfTouchesRequired="2" id="zvh-Vs-iWB" userLabel="swipeRight2">
                     <connections>
                         <action selector="rightGesture2:" destination="BYZ-38-t0r" id="jI6-T8-nbb"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="oEF-HT-arG"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="left" numberOfTouchesRequired="3" id="alX-hP-lk8" userLabel="swipeLeft3">
@@ -136,6 +144,7 @@
                 <swipeGestureRecognizer direction="right" numberOfTouchesRequired="3" id="7D6-s8-isP" userLabel="swipeRight3">
                     <connections>
                         <action selector="rightGesture3:" destination="BYZ-38-t0r" id="dmA-ri-r83"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="NUw-1k-5dP"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="left" numberOfTouchesRequired="4" id="K2J-ub-sp8" userLabel="swipeLeft4">
